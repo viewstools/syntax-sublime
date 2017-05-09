@@ -1,0 +1,45 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Views
+file_extensions: [view]
+scope: source.view
+contexts:
+  main:
+    # block name
+    - match: "^([A-Z][a-zA-Z0-9]*\\s*)$"
+      scope: entity.name.block.views
+    - match: "^([A-Z][a-zA-Z0-9]*)\\s+is\\s+.+$"
+      captures:
+        1: entity.name.block.views
+
+    # comment
+    - match: "^#.+$"
+      scope: comment.views
+    
+    # margin
+    - match: "^margin[a-zA-Z]*\\s*(.+)$"
+      captures:
+        1: constant.numeric.margin.views
+
+    # padding
+    - match: "^padding[a-zA-Z]*\\s*(.+)$"
+      captures:
+        1: constant.numeric.padding.views
+
+    # code
+    - match: "^[a-z][a-zA-Z0-9]*\\s*"
+      push: code
+    
+  code:
+    # props
+    - match: ".*props.*$"
+      pop: true
+      scope: variable.function.code.views
+    # item
+    - match: ".*item.*$"
+      pop: true
+      scope: variable.function.item.code.views
+    - match: ".+$"
+      pop: true
+      scope: string.value.views
