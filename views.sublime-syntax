@@ -9,7 +9,7 @@ contexts:
     # block name
     - match: "^([A-Z][a-zA-Z0-9]*\\s*)$"
       scope: entity.name.block.views
-    - match: "^([A-Z][a-zA-Z0-9]*)\\s+is\\s+.+$"
+    - match: "^([A-Z][a-zA-Z0-9]*)\\s+[a-z]*\\s*.+$"
       captures:
         1: entity.name.block.views
 
