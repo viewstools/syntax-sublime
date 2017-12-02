@@ -1,7 +1,7 @@
 # Views (viewsdx.com) language support in Sublime
 
-To install this package, copy the files `views.sublime-settings`, `views.sublime-syntax`, and
-`views.tmTheme` to your user packages directory.
+To install this package, copy the files `views.sublime-settings`, `views.sublime-syntax`,
+`views.tmTheme` and `Comments(views).tmPreferences` to your user packages directory.
 In Mac it seems to be `~/Library/Application Support/Sublime Text 3/Packages/User` but it may be
 different for you. You can open this directory from sublime though, by going to
 `Preferences -> Browse Packages`.
