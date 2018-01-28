@@ -42,6 +42,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Scope</string>
+			<key>scope</key>
+			<string>scope</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FEF45C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
 			<string>string.value.views</string>

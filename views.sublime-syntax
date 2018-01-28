@@ -16,16 +16,12 @@ contexts:
     # comment
     - match: "^#.+$"
       scope: comment.views
-    
-    # margin
-    - match: "^margin[a-zA-Z]*\\s*(.+)$"
-      captures:
-        1: constant.numeric.margin.views
 
-    # padding
-    - match: "^padding[a-zA-Z]*\\s*(.+)$"
+    # scope
+    - match: "^(when|onWhen)[a-zA-Z]*\\s*(.+)$"
       captures:
-        1: constant.numeric.padding.views
+        1: scope.views
+        2: variable.function.code.views
 
     # code
     - match: "^[a-z][a-zA-Z0-9]*\\s*"
