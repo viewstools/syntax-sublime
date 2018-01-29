@@ -42,13 +42,13 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Scope</string>
+			<string>onWhen</string>
 			<key>scope</key>
-			<string>scope</string>
+			<string>onWhen</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FEF45C</string>
+				<string>#A2E1F9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -60,28 +60,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#1FCC69</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Margin</string>
-			<key>scope</key>
-			<string>constant.numeric.margin.views</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#8F4BF2</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Padding</string>
-			<key>scope</key>
-			<string>constant.numeric.padding.views</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ffce00</string>
 			</dict>
 		</dict>
 		<dict>

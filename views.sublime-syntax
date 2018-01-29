@@ -17,11 +17,13 @@ contexts:
     - match: "^#.+$"
       scope: comment.views
 
-    # scope
-    - match: "^(when|onWhen)[a-zA-Z]*\\s*(.+)$"
-      captures:
-        1: scope.views
-        2: variable.function.code.views
+    # when
+    - match: "^when.+$"
+      scope: variable.function.code.views
+
+    # onWhen
+    - match: "^onWhen.+$"
+      scope: onWhen.views
 
     # code
     - match: "^[a-z][a-zA-Z0-9]*\\s*"
