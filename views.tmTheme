@@ -29,6 +29,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>UserComment</string>
+			<key>scope</key>
+			<string>userComment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000000</string>
+				<key>background</key>
+				<string>#000000B3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Comment</string>
 			<key>scope</key>
 			<string>comment</string>
@@ -64,7 +77,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Code props</string>
+			<string>Code slots</string>
 			<key>scope</key>
 			<string>variable.function.code.views</string>
 			<key>settings</key>
@@ -75,7 +88,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Code props item</string>
+			<string>Code slot item</string>
 			<key>scope</key>
 			<string>variable.function.item.code.views</string>
 			<key>settings</key>

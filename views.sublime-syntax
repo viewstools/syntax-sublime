@@ -13,6 +13,10 @@ contexts:
       captures:
         1: entity.name.block.views
 
+    ## user comment
+    - match: '^##.+$'
+      scope: 'userComment.views'
+
     # comment
     - match: "^#.+$"
       scope: comment.views
@@ -28,10 +32,16 @@ contexts:
     # code
     - match: "^[a-z][a-zA-Z0-9]*\\s*"
       push: code
-    
+
   code:
-    # props
-    - match: ".*props.*$"
+    # slots w/ default value
+    - match: "(<[a-z][a-zA-Z0-9]*)?\\ +(s*(.+)$)"
+      pop: true
+      captures:
+        1: variable.function.code.views
+        2: string.value.views
+    # slots
+    - match: "(<[a-z][a-zA-Z0-9]*)"
       pop: true
       scope: variable.function.code.views
     # item
