@@ -41,7 +41,7 @@ contexts:
         1: variable.function.code.views
         2: string.value.views
     # slots
-    - match: "(<[a-z][a-zA-Z0-9]*)"
+    - match: "<([a-z][a-zA-Z0-9]*)?"
       pop: true
       scope: variable.function.code.views
     # item
