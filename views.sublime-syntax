@@ -2,7 +2,7 @@
 ---
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Views
-file_extensions: [view, view.tests]
+file_extensions: [view, blocks]
 scope: source.view
 contexts:
   main:
